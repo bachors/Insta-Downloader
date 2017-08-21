@@ -17,9 +17,15 @@ insta.setDir("/download");
 insta.get("https://www.instagram.com/p/xxx");
 ```
 
-Demo
-----
-<a href="https://play.google.com/store/apps/details?id=com.bachors.downgram">https://play.google.com/store/apps/details?id=com.bachors.downgram</a>
+Step by step
+------------
+- Open the InstaDownloader app
+- Open the Instagram app
+- Click on the Copy Share URL menu
+- Click the download or repost button
+
+<a href="https://play.google.com/store/apps/details?id=com.bachors.downgram">Demo</a>
+-------------------------------------------------------------------------------------
 
 MIT
 -----

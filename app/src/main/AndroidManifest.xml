@@ -31,7 +31,7 @@
             android:exported="false"
             android:name=".ClipBoardService">
             <intent-filter>
-                <action android:name="com.bachors.downgram.START_SERVICE" />
+                <action android:name="com.bachors.instadownloader.START_SERVICE" />
             </intent-filter>
         </service>
     </application>

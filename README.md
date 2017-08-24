@@ -1,4 +1,6 @@
 # Insta-Downloader
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InstaDownloader-red.svg?style=flat)](https://android-arsenal.com/details/1/6088)
+
 Simple Video &amp; Photo Downloader or Repost for Instagram.
 
 ![gif](http://i.giphy.com/l3fzQ8q7hqaQ2ppOE.gif)

@@ -7,6 +7,7 @@ Simple Video &amp; Photo Downloader or Repost for Instagram.
 
 Usage
 -----
+<< <a href='http://bachors.com/tools/instagram-accesstoken-generator'>Access Token Generator</a> >>
 ```java
 ...
 

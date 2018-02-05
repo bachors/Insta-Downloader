@@ -1,23 +1,16 @@
 package com.bachors.instadownloader;
 
-<<<<<<< HEAD
 import android.Manifest;
-=======
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-<<<<<<< HEAD
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-=======
-import android.os.Bundle;
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -28,22 +21,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-<<<<<<< HEAD
 import com.bachors.instadownloader.instadownloader.InstaClipBoard;
 import com.bachors.instadownloader.instadownloader.InstaDownloader;
-=======
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
 import com.bachors.prefixinput.EditText;
 
 import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
 /**
  * @author Ican Bachors
-<<<<<<< HEAD
  * @version 1.1
-=======
- * @version 1.0
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
  * Source: https://github.com/bachors/Insta-Downloader
  */
 
@@ -71,11 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         // config
         insta = new InstaDownloader(this);
-<<<<<<< HEAD
         insta.setAccessToken("4211870052.3a81a9f.bbc4c3aec0c8433b8855c3f101a4cae1");
-=======
-        insta.setAccessToken("2227436581.3a81a9f.4e37b9951fb344ffbbd57bac6aa0dca1");
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
         insta.setDir("/InstaDownloader");
 
         // input url
@@ -98,16 +80,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // clipboard listener
-<<<<<<< HEAD
         Intent svc = new Intent(MainActivity.this, InstaClipBoard.class);
         startService(svc);
         ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         assert clipboard != null;
-=======
-        Intent svc = new Intent(MainActivity.this, ClipBoardService.class);
-        startService(svc);
-        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
         if ((clipboard.hasPrimaryClip())) {
             if ((clipboard.getPrimaryClipDescription().hasMimeType(MIMETYPE_TEXT_PLAIN))) {
                 final ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);

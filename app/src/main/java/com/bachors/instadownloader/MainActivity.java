@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         // config
         insta = new InstaDownloader(this);
-        insta.setAccessToken("4211870052.3a81a9f.bbc4c3aec0c8433b8855c3f101a4cae1");
+        insta.setAccessToken("xxx.xxx.xxx");
         insta.setDir("/InstaDownloader");
 
         // input url

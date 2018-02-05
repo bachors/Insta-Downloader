@@ -3,7 +3,12 @@
 
 Simple Video &amp; Photo Downloader or Repost for Instagram.
 
+New
+-----
+- Supports downloading carousel media. 
+
 ![gif](http://i.giphy.com/l3fzQ8q7hqaQ2ppOE.gif)
+
 
 Usage
 -----

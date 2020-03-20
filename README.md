@@ -32,7 +32,7 @@ Step by step
 - Click on the Copy Share URL menu
 - Click the download or repost button
 
-<a href="https://play.google.com/store/apps/details?id=com.bachors.downloadgram">Demo</a>
+<a href="https://play.google.com/store/apps/details?id=com.ggstudio.instadownloader">Demo</a>
 -------------------------------------------------------------------------------------
 
 MIT

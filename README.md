@@ -3,4 +3,4 @@ Simple Video & Photo Downloader for Instagram Post & Reel.
 
 DEMO
 -----
-<img src="https://github.com/bachors/Insta-Downloader/demo.png" width="200"/>
+<img src="https://raw.githubusercontent.com/bachors/Insta-Downloader/refs/heads/master/demo.png" width="200"/>

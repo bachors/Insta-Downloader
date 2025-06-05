@@ -1,123 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bachors.instadownloader.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
+        android:background="@color/colorGrey"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="vertical"
+            android:padding="@dimen/margin_16"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="fill_parent">
+            android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_margin="@dimen/margin_16"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-                <com.bachors.prefixinput.EditText
-                    android:id="@+id/input"
-                    android:maxLines="1"
-                    android:inputType="text"
-                    android:scrollHorizontally="true"
-                    android:ellipsize="end"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/input" />
-            </android.support.design.widget.TextInputLayout>
-
-<<<<<<< HEAD
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/instadown"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
-=======
-            <android.support.v7.widget.CardView
-                android:id="@+id/card_view"
-                android:visibility="gone"
+            <TextView
+                android:text="@string/input"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
+                android:layout_height="wrap_content" />
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/image"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:contentDescription="@string/app_name" />
-
-                    <TableLayout
-                        android:background="@color/colorBorder"
-                        android:orientation="vertical"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="0dp">
-
-                        <TableRow
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:id="@+id/repost"
-                                android:gravity="center"
-                                android:padding="@dimen/margin_10"
-                                android:background="@color/colorGrey"
-                                android:layout_margin="0.5dip"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_column="1"
-                                android:src="@drawable/ic_repost"
-                                android:contentDescription="@string/app_name" />
-
-                            <ImageView
-                                android:id="@+id/download"
-                                android:gravity="center"
-                                android:padding="@dimen/margin_10"
-                                android:background="@color/colorGrey"
-                                android:layout_margin="0.5dip"
-                                android:layout_weight="1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_column="2"
-                                android:src="@drawable/ic_download"
-                                android:contentDescription="@string/app_name" />
-
-                        </TableRow>
-
-                    </TableLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
->>>>>>> c715af0bb49f5ecabe518fa2f2f5a479e94820d3
+            <EditText
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:importantForAutofill="no"
+                android:background="@color/colorGrey"
+                android:id="@+id/inur"
+                android:hint="@string/url"
+                android:layout_marginTop="@dimen/margin_4"
+                android:padding="@dimen/margin_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
-    </android.support.constraint.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_16"
+            android:layout_height="match_parent"/>
 
-</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

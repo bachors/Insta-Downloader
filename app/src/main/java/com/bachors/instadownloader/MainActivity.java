@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         EdgeToEdge.enable(this);
         super.onCreate(savedInstanceState);
-
+        getSupportActionBar();
         Objects.requireNonNull(getSupportActionBar()).setElevation(0);
 
         con = this;
@@ -116,10 +116,25 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
 
+        Intent intent = getIntent();
+        String action = intent.getAction();
+        assert action != null;
+        if (action.equals(Intent.ACTION_SEND)) {
+            String url = intent.getStringExtra(Intent.EXTRA_TEXT);
+            if (url != null) {
+                if(url.matches(postUri + "(.*)") || url.matches(reeltUri + "(.*)")){
+                    loading.show();
+                    getData(url);
+                }else{
+                    Toast.makeText(getApplicationContext(), "URL not valid.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+
     }
 
     private void getData(String url) {
-        apiService.getVideo(url)
+        Objects.requireNonNull(apiService.getVideo(url))
                 .enqueue(new Callback<>() {
                     @Override
                     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
